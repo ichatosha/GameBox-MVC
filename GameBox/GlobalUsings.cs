@@ -1,0 +1,13 @@
+﻿global using Microsoft.Extensions.Options;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using System.ComponentModel.DataAnnotations;
+global using GameBox.Models;
+global using GameBox.Data;
+global using GameBox.ViewModel;
+global using GameBox.Services;
+global using GameBox.Settings;
+global using static System.Net.Mime.MediaTypeNames;
+global using GameBox.Attributes;
+global using System.Runtime.CompilerServices;

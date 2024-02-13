@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Game>
+
+@{
+    ViewData["Title"] = "Games";
+}
+
+<a class="btn btn-primary btn-lg" asp-action="Create" asp-controller="Games">
+    <i class="bi bi-plus-circle"></i>
+    Add New Game
+
+</a>
+
+@if(!Model.Any())
+{
+    <div class="alert alert-warning">
+        <h5 class="alert-heading">No Games!</h5>
+        <p class="mb-1">No Games were Found! </p>
+    </div>
+}
+else
+{
+    <div class="mt-5">
+        <table class="table table-bordered border-primary">
+            <tbody>
+                @foreach(var game in Model)
+                {
+                    <tr class="border-1 border-success">
+                        <td>
+                            <div class=" d-flex ">
+                                <div class="pe-4">
+                                    <img src="@($"{FileSettings.ImagePath}/{game.Cover}")" alt="@game.Name" style="max-width:90px;">
+                                </div>
+                                <div calss="d-flex flex-column justify-content-center">
+                                    <h3>@game.Name</h3>
+                                    <h5 class="text-success">@game.Category.Name</h5>
+                                    <h6 class="text-secondary">@game.Description</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            <div class="d-flex justify-content-center ">
+                                <a  class= "btn btn-info rounded rounded-2 me-2" asp-action="Update" asp-route-id="@game.Id">
+                                    <i class=" bi bi-pencil-fill"></i>
+                                </a>
+                                <a href="javascript:;" class="btn btn-danger rounded rounded-2 js-delete " data-id="@game.Id">
+                                    <i class="bi bi-trash3"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@section scripts 
+{
+
+    <script src="~/js/game-delete.js"></script>
+}
