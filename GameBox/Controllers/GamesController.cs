@@ -18,10 +18,18 @@ namespace GameBox.Controllers
         }
 
         #region GetAll
-        public IActionResult Index()
+        public IActionResult Index(string searchValue)
         {
-            var games = _gameService.GetGames();
-            return View(games);
+            if(string.IsNullOrEmpty(searchValue))
+            {
+                var games = _gameService.GetGames();
+                return View(games);
+            } 
+            else
+            {
+                var game = _gameService.GetGameByName(searchValue);
+                return View(game);
+            }
         }
 
         #endregion

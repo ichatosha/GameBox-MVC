@@ -5,6 +5,6 @@
     "\\GameBox\\Controllers",
     "\\GameBox\\Data"
   ],
-  "SelectedNode": "\\GameBox",
+  "SelectedNode": "\\GameBox\\Controllers\\GamesController.cs",
   "PreviewInSolutionExplorer": false
 }
