@@ -5,25 +5,28 @@ namespace GameBox.Controllers
     public class GamesController : Controller
     {
 
-        
+
         private readonly ICategoriesService _categoriesService;
         private readonly IDevicesService _devicesService;
         private readonly IGameServices _gameService;
 
         public GamesController(IDevicesService devicesService, ICategoriesService categoriesService, IGameServices gameService)
         {
-
             _devicesService = devicesService;
             _categoriesService = categoriesService;
             _gameService = gameService;
         }
+
+        #region GetAll
         public IActionResult Index()
         {
             var games = _gameService.GetGames();
             return View(games);
         }
 
+        #endregion
 
+        #region Create
         [HttpGet]
         public ActionResult Create()
         {
@@ -39,23 +42,10 @@ namespace GameBox.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Details(int id)
-        {
-            var game = _gameService.getById(id);
-            if (game is not null)
-            {
-                return View(game);
-            }
-            else
-            {
-                return NotFound();
-            }
-        }
-        // Create
         [HttpPost]
         // more secure
         [ValidateAntiForgeryToken]
-        public async Task <IActionResult> Create(CreateGameFormViewModel model)
+        public async Task<IActionResult> Create(CreateGameFormViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -73,8 +63,24 @@ namespace GameBox.Controllers
             return RedirectToAction("Index");
 
         }
+        #endregion
 
-        //Update
+        #region Details
+        public IActionResult Details(int id)
+        {
+            var game = _gameService.getById(id);
+            if (game is not null)
+            {
+                return View(game);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        #endregion
+
+        #region Update
         [HttpGet]
         public IActionResult Update(int id)
         {
@@ -119,16 +125,24 @@ namespace GameBox.Controllers
             }
             return RedirectToAction("Index");
         }
-        //delete
+
+        #endregion
+
+        #region Delete
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            var IsDeleted = _gameService.Delete(id);
+            var isDeleted = _gameService.Delete(id);
 
+            if (isDeleted)
+            {
+                return Ok();  
+            }
 
-            return IsDeleted ? Ok() : BadRequest();
+            return BadRequest();  
         }
 
+        #endregion
     }
-}
 
+}

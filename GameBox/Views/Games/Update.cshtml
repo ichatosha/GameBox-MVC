@@ -1,66 +1,88 @@
-﻿
-@model UpdateGameFromViewModel
+﻿@model UpdateGameFromViewModel
 
 @{
     ViewData["Title"] = "Edit Game";
-} 
+}
 
-<h5>
-    <i class="bi bi-plus-circle"></i>
-    Edit Game 
+<h5 class="text-success">
+    <i class="bi bi-pencil-square"></i>
+    Edit Game
 </h5>
 
 <form asp-controller="Games" enctype="multipart/form-data">
-    <div class = "row">
-        <div class = "col-md-6">
+    <div class="row">
+        <div class="col-md-6">
             <div class="form-group">
-                <label asp-for="Name" class="form-label mt-4"></label>
-                <input type="text" class="form-control" asp-for="Name" placeholder="Name">
+                <label asp-for="Name" class="form-label mt-4 text-muted">Game Name</label>
+                <input type="text" class="form-control shadow-sm rounded-pill" asp-for="Name" placeholder="Enter Game Name">
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="CategoryId" class="form-label mt-4"></label>
-                <select class="form-select" asp-for="CategoryId" asp-items="Model.Categories">
+                <label asp-for="CategoryId" class="form-label mt-4 text-muted">Category</label>
+                <select class="form-select shadow-sm rounded-pill" asp-for="CategoryId" asp-items="Model.Categories">
                     <option value="">Select Category</option>
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger d-block"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="SelectedDevices" class="form-label mt-4"></label>
-                <select class="form-select" asp-for="SelectedDevices" asp-items="Model.Devices">
+                <label asp-for="SelectedDevices" class="form-label mt-4 text-muted">Devices</label>
+                <select class="form-select shadow-sm rounded-pill" asp-for="SelectedDevices" asp-items="Model.Devices">
                     <option value="">Select Device</option>
                 </select>
                 <span asp-validation-for="SelectedDevices" class="text-danger d-block"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Description" class="form-label mt-4"></label>
-               <textarea asp-for ="Description" class = "form-control" placeholder="Description"></textarea>
+                <label asp-for="Description" class="form-label mt-4 text-muted">Description</label>
+                <textarea asp-for="Description" class="form-control shadow-sm rounded-pill" placeholder="Game Description"></textarea>
                 <span asp-validation-for="Description" class="text-danger d-block"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Cover" class="form-label mt-4"></label>
-                <input type="file" class="form-control" asp-for = "Cover" 
-                data-rule-extension="@FileSettings.AllowedExtensions.Replace(".", string.Empty)"
-                data-msg-extension="Not Allowed Extension"
-                 
-                data-rule-filesize="@FileSettings.MaxSizeInBytes"
-                data-msg-filesize="The File is Too Big, Max Size allowed is @FileSettings.MaxSizeForImageInMB MB"/>
+                <label asp-for="Cover" class="form-label mt-4 text-muted">Game Cover</label>
+                <input type="file" class="form-control shadow-sm rounded-pill" asp-for="Cover"
+                       data-rule-extension="@FileSettings.AllowedExtensions.Replace(".", string.Empty)"
+                       data-msg-extension="Not Allowed Extension"
+                       data-rule-filesize="@FileSettings.MaxSizeInBytes"
+                       data-msg-filesize="The File is Too Big, Max Size allowed is @FileSettings.MaxSizeForImageInMB MB" />
                 <small class="form-text text-muted">Only .Jpg, .Png, .Jpeg files are allowed with max size 1MB.</small>
                 <span asp-validation-for="Cover" class="text-danger d-block"></span>
             </div>
-            <button type ="Submit" class= "btn btn-dark text-light mt-3" >Save</button>
+
+            <button type="submit" class="btn btn-success text-light mt-3 shadow-sm rounded-pill px-4 py-2"
+                    style="background: linear-gradient(45deg, #28a745, #218838);">
+                Save
+            </button>
         </div>
+
         <div class="col-md-6 d-flex justify-content-end pt-4 overflow-hidden">
-            <img class="cover-preview " alt="Cover" src="@($"{FileSettings.ImagePath}/{Model.CurrentCover}") "/>
+            <img class="cover-preview shadow-sm rounded-3" alt="Cover" src="@($"{FileSettings.ImagePath}/{Model.CurrentCover}")"
+                 style="max-height: 350px; object-fit: cover; border: 4px solid #28a745;" />
         </div>
     </div>
 </form>
 
-@section Scripts{
+@section Scripts {
     <script>
-        // add client side validation for extension 
     </script>
-        <partial name="_ValidationScriptsPartial" />
-        <Script src="~/js/FileSize-validator.js" asp-append-version="true"></Script>
-        <Script src="~/js/GameForm.js" asp-append-version="true"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/FileSize-validator.js" asp-append-version="true"></script>
+    <script src="~/js/GameForm.js" asp-append-version="true"></script>
 }
+
+<style>
+    .form-control:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    }
+
+    .btn-success:hover {
+        background: linear-gradient(45deg, #218838, #1e7e34);
+    }
+
+    .form-group small {
+        font-size: 0.875rem;
+    }
+</style>

@@ -13,12 +13,18 @@ namespace GameBox.Controllers
             _gameServices = gameServices;
         }
 
-
-
-        public IActionResult Index()
+        public IActionResult Index(string searchValue)
         {
-            var games = _gameServices.GetGames();
-            return View(games);
+            if(string.IsNullOrEmpty(searchValue))
+            {
+                var games = _gameServices.GetGames();
+                return View(games);
+            }
+            else
+            {
+                var game = _gameServices.GetGameByName(searchValue);
+                return View(game);
+            }
         }
 
      

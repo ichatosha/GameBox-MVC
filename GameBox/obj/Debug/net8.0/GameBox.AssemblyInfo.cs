@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5462b68e591b256add94f10870db63c3559c3ac5")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,9 +1,9 @@
-﻿
-
-
-
-using Microsoft.AspNetCore.Http.HttpResults;
-
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace GameBox.Services
 {
     public class GameServices : IGameServices
@@ -141,7 +141,10 @@ namespace GameBox.Services
             return coverName;
         }
 
-       
+        public IEnumerable<Game> GetGameByName(string SearchValue)
+        {
+             return _context.Games.Where(E => E.Name.ToLower().Contains(SearchValue.ToLower())).Include(g => g.Category).ToList();
+        }
     }
-
+    
 }
