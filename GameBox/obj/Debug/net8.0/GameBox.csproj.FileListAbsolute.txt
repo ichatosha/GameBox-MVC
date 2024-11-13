@@ -272,3 +272,15 @@ E:\route daata\GameBox\GameBox\obj\Debug\net8.0\refint\GameBox.dll
 E:\route daata\GameBox\GameBox\obj\Debug\net8.0\GameBox.pdb
 E:\route daata\GameBox\GameBox\obj\Debug\net8.0\GameBox.genruntimeconfig.cache
 E:\route daata\GameBox\GameBox\obj\Debug\net8.0\ref\GameBox.dll
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.csproj.AssemblyReference.cache
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.AssemblyInfoInputs.cache
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.AssemblyInfo.cs
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.csproj.CoreCompileInputs.cache
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.RazorAssemblyInfo.cache
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.RazorAssemblyInfo.cs
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.sourcelink.json
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.dll
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\refint\GameBox.dll
+C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\obj\Debug\net8.0\GameBox.pdb
