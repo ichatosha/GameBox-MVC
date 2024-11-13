@@ -4,25 +4,78 @@
     ViewData["Title"] = Model.Name;
 }
 
-<div class="card border-success rounded-3 mt-5 overflow-hidden">
-    <div class="car-body p-0" >
-        <div class="row">
-            <div class=" col-md-8 px-5 py-5 d-flex flex-column justify-content-between">
+<div class="card border-success shadow-sm rounded-4 mt-5 overflow-hidden" style="max-width: 1000px; margin: auto;">
+    <div class="card-body p-0">
+        <div class="row g-0">
+            <div class="col-md-8 p-5 d-flex flex-column justify-content-between">
                 <div>
-                    <h1 class="text-success fw-bolder">@Model.Name</h1>
-                    <span class="badge bg-info fs-8 mb-4">@Model.Category?.Name</span>
-                    <p class="fs-5">@Model.Description</p>
+                    <h1 class="text-success fw-bold mb-3">@Model.Name</h1>
+                    <span class="badge bg-info text-white px-3 py-2 rounded-pill fs-6">@Model.Category?.Name</span>
+                    <p class="fs-5 mt-4 text-muted">@Model.Description</p>
                 </div>
-                <div>
-                    @foreach(var gameDevice in Model.Devices)
+                <div class="mt-4">
+                    @foreach (var gameDevice in Model.Devices)
                     {
-                        <i class="@gameDevice.devices.Icon me-2 fs-4 text-secondary"></i>
+                        <i class="@gameDevice.devices.Icon me-3 fs-4 text-secondary"></i>
                     }
                 </div>
+                <div class="mt-4 d-flex">
+                    <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning rounded-pill me-2 px-4 py-2 d-flex align-items-center shadow-sm">
+                        <i class="bi bi-pencil-fill me-2"></i> Update
+                    </a>
+                    <a href="javascript:;" class="btn btn-danger rounded-pill px-3 d-flex align-items-center js-delete"
+                       data-id="@Model.Id" title="Delete Game" style="transition: background 0.3s;">
+                        <i class="bi bi-trash3 me-2"></i> Delete
+                    </a>
+
+                </div>
             </div>
-            <div class=" col-md-4">
-                <img src="@($"{FileSettings.ImagePath}/{Model.Cover}")" alt="@Model.Name" class="w-100" />
+            <div class="col-md-4">
+                <img src="@($"{FileSettings.ImagePath}/{Model.Cover}")" alt="@Model.Name" class="w-100 h-100 rounded-end object-fit-cover">
             </div>
         </div>
     </div>
 </div>
+
+
+@section Scripts {
+    <script src="~/js/game-delete.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+}
+
+<style>
+    .btn-warning:hover, .btn-danger:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+
+    .card-body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-muted {
+        color: #6c757d !important;
+    }
+</style>
+<style>
+    .btn-outline-primary:hover {
+        background-color: #007bff !important;
+        color: #fff !important;
+    }
+
+    .btn-outline-warning:hover {
+        background-color: #ffc107 !important;
+        color: #fff !important;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: #dc3545 !important;
+        color: #fff !important;
+    }
+</style>

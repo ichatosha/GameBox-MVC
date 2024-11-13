@@ -20,18 +20,17 @@ namespace GameBox.Controllers
         #region GetAll
         public IActionResult Index(string searchValue)
         {
-            if(string.IsNullOrEmpty(searchValue))
+            if (string.IsNullOrEmpty(searchValue))
             {
                 var games = _gameService.GetGames();
                 return View(games);
-            } 
+            }
             else
             {
                 var game = _gameService.GetGameByName(searchValue);
                 return View(game);
             }
         }
-
         #endregion
 
         #region Create
@@ -144,11 +143,12 @@ namespace GameBox.Controllers
 
             if (isDeleted)
             {
-                return Ok();  
+                return Ok(); // Respond with OK for successful deletion
             }
 
-            return BadRequest();  
+            return BadRequest(); // Respond with BadRequest if deletion fails
         }
+
 
         #endregion
     }

@@ -4,46 +4,79 @@
     ViewData["Title"] = "Games";
 }
 
-<a class="btn btn-primary btn-lg" asp-action="Create" asp-controller="Games">
-    <i class="bi bi-plus-circle"></i>
-    Add New Game
 
+<div class="m-3">
+    <form class="row align-items-center mx-auto shadow-sm rounded-pill p-2" style="width: 100%; max-width: 1200px; background: #f8f9fa;">
+        <div class="col pe-0">
+            <input class="form-control rounded-pill" type="text" name="searchValue" placeholder="Search by game's name..."
+                   style="width: 100%; border: 1px solid #007bff; padding: 0.6rem 1rem; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);" />
+        </div>
+        <div class="col-auto ps-0">
+            <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 d-flex align-items-center"
+                    style="background: linear-gradient(45deg, #007bff, #0056b3); color: #fff; border: none; transition: background 0.3s;">
+                <i class="bi bi-search me-2"></i> Search
+            </button>
+        </div>
+    </form>
+</div>
+<br />
+<a class="btn btn-primary btn-lg d-flex align-items-center justify-content-center px-4 py-3 shadow rounded-pill"
+   asp-action="Create"
+   asp-controller="Games"
+   style="background: linear-gradient(45deg, #007bff, #0056b3); color: #fff; border: none; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); transition: transform 0.2s ease;">
+    <i class="bi bi-plus-circle me-2" style="font-size: 1.5em;"></i>
+    <span style="font-weight: 600; font-size: 1.2em;">Add New Game</span>
 </a>
 
-@if(!Model.Any())
+@if (!Model.Any())
 {
-    <div class="alert alert-warning">
-        <h5 class="alert-heading">No Games!</h5>
-        <p class="mb-1">No Games were Found! </p>
+    <div class="alert alert-warning text-center mt-4">
+        <h5 class="alert-heading">No Games Available!</h5>
+        <p class="mb-1">There are currently no games in the catalog.</p>
     </div>
 }
 else
 {
     <div class="mt-5">
-        <table class="table table-bordered border-primary">
+        <table class="table table-hover border-primary shadow-sm rounded">
             <tbody>
-                @foreach(var game in Model)
+                @foreach (var game in Model)
                 {
-                    <tr class="border-1 border-success">
-                        <td>
-                            <div class=" d-flex ">
-                                <div class="pe-4">
-                                    <img src="@($"{FileSettings.ImagePath}/{game.Cover}")" alt="@game.Name" style="max-width:90px;">
-                                </div>
-                                <div calss="d-flex flex-column justify-content-center">
-                                    <h3>@game.Name</h3>
-                                    <h5 class="text-success">@game.Category.Name</h5>
-                                    <h6 class="text-secondary">@game.Description</h6>
+                    <tr class="align-middle">
+                        <td class="p-3">
+                            <div class="d-flex align-items-center">
+                                <img src="@($"{FileSettings.ImagePath}/{game.Cover}")" alt="@game.Name"
+                                     class="rounded shadow-sm me-4"
+                                     style="width: 90px; height: auto; object-fit: cover;">
+                                <div class="d-flex flex-column">
+                                    <h3>
+                                        <a asp-action="Details" asp-route-id="@game.Id" class="text-decoration-none text-dark fw-bold">
+                                            @game.Name
+                                        </a>
+                                    </h3>
+                                    <h5 class="text-success">@((game.Category != null) ? game.Category.Name : "Uncategorized")</h5>
+                                    <p class="text-secondary">@game.Description</p>
                                 </div>
                             </div>
                         </td>
-                        <td class="align-middle">
-                            <div class="d-flex justify-content-center ">
-                                <a  class= "btn btn-info rounded rounded-2 me-2" asp-action="Update" asp-route-id="@game.Id">
-                                    <i class=" bi bi-pencil-fill"></i>
+
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center gap-2">
+                                <a class="btn btn-success rounded-pill px-3 d-flex align-items-center"
+                                   asp-action="Details" asp-route-id="@game.Id" title="View Game Details"
+                                   style="transition: background 0.3s;">
+                                    <i class="bi bi-eye me-2"></i> Details
                                 </a>
-                                <a href="javascript:;" class="btn btn-danger rounded rounded-2 js-delete " data-id="@game.Id">
-                                    <i class="bi bi-trash3"></i>
+
+                                <a class="btn btn-warning rounded-pill px-3 d-flex align-items-center"
+                                   asp-action="Update" asp-route-id="@game.Id" title="Edit Game"
+                                   style="transition: background 0.3s;">
+                                    <i class="bi bi-pencil-fill me-2"></i> Update
+                                </a>
+
+                                <a href="javascript:;" class="btn btn-danger rounded-pill px-3 d-flex align-items-center js-delete"
+                                   data-id="@game.Id" title="Delete Game" style="transition: background 0.3s;">
+                                    <i class="bi bi-trash3 me-2"></i> Delete
                                 </a>
                             </div>
                         </td>
@@ -54,8 +87,36 @@ else
     </div>
 }
 
-@section scripts 
+@section scripts
 {
-
     <script src="~/js/game-delete.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 }
+
+<style>
+    .btn-outline-primary:hover {
+        background-color: #007bff !important;
+        color: #fff !important;
+    }
+
+    .btn-outline-warning:hover {
+        background-color: #ffc107 !important;
+        color: #fff !important;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: #dc3545 !important;
+        color: #fff !important;
+    }
+</style>
+<style>
+    .form-control:focus {
+        border-color: #0056b3;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(45deg, #0056b3, #003d80);
+    }
+</style>
