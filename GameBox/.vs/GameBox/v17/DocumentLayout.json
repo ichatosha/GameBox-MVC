@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:wwwroot\\js\\game-delete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T22:14:32.988Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -37,8 +54,12 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "game-delete.js",
               "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\wwwroot\\js\\game-delete.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\game-delete.js",
@@ -46,7 +67,8 @@
               "RelativeToolTip": "wwwroot\\js\\game-delete.js",
               "ViewState": "AQIAAAkAAAAAAAAAAAAUwBgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-14T21:10:47.346Z"
+              "WhenOpened": "2024-11-14T21:10:47.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -58,11 +80,12 @@
               "RelativeToolTip": "Views\\Games\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T21:10:03.155Z"
+              "WhenOpened": "2024-11-14T21:10:03.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Views\\Games\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Games\\Details.cshtml",
@@ -70,17 +93,18 @@
               "RelativeToolTip": "Views\\Games\\Details.cshtml",
               "ViewState": "AQIAADMAAAAAAAAAAAAAwFAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T21:09:51.1Z"
+              "WhenOpened": "2024-11-14T21:09:51.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
               "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Controllers\\GamesController.cs",
               "RelativeToolTip": "Controllers\\GamesController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAIsAAAASAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwFcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T21:09:52.639Z",
               "EditorCaption": ""
