@@ -22,15 +22,15 @@ $(document).ready(function () {
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: `/Games/Delete/${gameId}`,  // Use the game ID in the URL
-                    type: 'POST',  // Use POST as the method type
+                    url: `/Games/Delete/${gameId}`,  
+                    type: 'POST',  
                     success: function () {
                         swal.fire(
                             'Deleted!',
                             'Game has been deleted.',
                             'success'
                         ).then(() => {
-                            window.location.href = '/Games/Index';  // Redirect to the Index page
+                            window.location.href = '/Games/Index';  
                         });
                     },
                     error: function () {

@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GameBox
 build_property.RootNamespace = GameBox
-build_property.ProjectDir = E:\route daata\GameBox\GameBox\
+build_property.ProjectDir = C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\route daata\GameBox\GameBox
+build_property.MSBuildProjectDirectory = C:\Users\HESHAM\source\repos\ichatosha\GameBox-MVC\GameBox
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/route daata/GameBox/GameBox/Views/Games/Create.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Games/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Games/Details.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Games/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Games/Index.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Games/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Games/Update.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Games/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Home/Index.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Shared/Error.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/_ViewImports.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/_ViewStart.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/route daata/GameBox/GameBox/Views/Shared/_Layout.cshtml]
+[C:/Users/HESHAM/source/repos/ichatosha/GameBox-MVC/GameBox/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9rrr5wxqok

@@ -135,18 +135,19 @@ namespace GameBox.Controllers
 
         #endregion
 
+
         #region Delete
-        [HttpDelete]
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var isDeleted = _gameService.Delete(id);
 
             if (isDeleted)
             {
-                return Ok(); // Respond with OK for successful deletion
+                return Ok();
             }
 
-            return BadRequest(); // Respond with BadRequest if deletion fails
+            return BadRequest(); 
         }
 
 

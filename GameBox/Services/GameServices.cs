@@ -28,6 +28,7 @@ namespace GameBox.Services
                 .ToList();
             return games;
         }
+
         public Game? getById(int id)
         {
             var gets = _context.Games

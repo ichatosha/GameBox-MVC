@@ -92,7 +92,7 @@ namespace GameBox.Migrations
                         new
                         {
                             Id = 1,
-                            Icon = "bi bi-playstion",
+                            Icon = "bi bi-playstation",
                             Name = "Playstation"
                         },
                         new
@@ -110,7 +110,7 @@ namespace GameBox.Migrations
                         new
                         {
                             Id = 4,
-                            Icon = "bi bi-nintendo",
+                            Icon = "bi bi-nintendo-switch",
                             Name = "Nintendo"
                         });
                 });

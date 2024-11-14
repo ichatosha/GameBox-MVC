@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\viewmodel\\updategamefromviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:viewmodel\\updategamefromviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\wwwroot\\js\\game-delete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:wwwroot\\js\\game-delete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\viewmodel\\creategameformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:viewmodel\\creategameformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\services\\gameservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:services\\gameservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|c:\\users\\hesham\\source\\repos\\ichatosha\\gamebox-mvc\\gamebox\\views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B151AF61-ECB1-4DDF-BE11-CD1EFB4D5C0E}|GameBox.csproj|solutionrelative:views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,53 +39,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\GlobalUsings.cs",
-              "RelativeToolTip": "GlobalUsings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T21:58:42.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateGameFromViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\ViewModel\\UpdateGameFromViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\UpdateGameFromViewModel.cs",
-              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\ViewModel\\UpdateGameFromViewModel.cs",
-              "RelativeToolTip": "ViewModel\\UpdateGameFromViewModel.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAjwAwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:58:23.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateGameFormViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\ViewModel\\CreateGameFormViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\CreateGameFormViewModel.cs",
-              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\ViewModel\\CreateGameFormViewModel.cs",
-              "RelativeToolTip": "ViewModel\\CreateGameFormViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAjwAgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:58:01.276Z",
-              "EditorCaption": ""
+              "Title": "game-delete.js",
+              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\wwwroot\\js\\game-delete.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\game-delete.js",
+              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\wwwroot\\js\\game-delete.js",
+              "RelativeToolTip": "wwwroot\\js\\game-delete.js",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-14T21:10:47.346Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GameServices.cs",
-              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Services\\GameServices.cs",
-              "RelativeDocumentMoniker": "Services\\GameServices.cs",
-              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Services\\GameServices.cs",
-              "RelativeToolTip": "Services\\GameServices.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAAJUAAAABAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Views\\Games\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Games\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Views\\Games\\Index.cshtml",
+              "RelativeToolTip": "Views\\Games\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T21:10:03.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Views\\Games\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Games\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Views\\Games\\Details.cshtml",
+              "RelativeToolTip": "Views\\Games\\Details.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAwFAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T21:09:51.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "Controllers\\GamesController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAIsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:55:21.563Z"
+              "WhenOpened": "2024-11-14T21:09:52.639Z",
+              "EditorCaption": ""
             }
           ]
         }

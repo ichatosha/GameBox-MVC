@@ -5506,11 +5506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\route daata\\GameBox\\GameBox\\GameBox.csproj",
+      "projectUniqueName": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\GameBox.csproj",
       "projectName": "GameBox",
-      "projectPath": "E:\\route daata\\GameBox\\GameBox\\GameBox.csproj",
+      "projectPath": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\GameBox.csproj",
       "packagesPath": "C:\\Users\\HESHAM\\.nuget\\packages\\",
-      "outputPath": "E:\\route daata\\GameBox\\GameBox\\obj\\publish\\win-x86\\",
+      "outputPath": "C:\\Users\\HESHAM\\source\\repos\\ichatosha\\GameBox-MVC\\GameBox\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HESHAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
